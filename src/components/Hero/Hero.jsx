@@ -10,7 +10,6 @@ const Hero = ({ hey, title, description, btn, background, myimg, Squares, }) => 
 
         <div id="home" className="px-7 flex justify-center items-center bg-contain bg-center bg-no-repeat border-b-2 border-[#1D2130] border-dashed mt-[112px] dark:border-white flex-wrap xl:justify-between  lg:px-[70px] " style={{ backgroundImage: `url(${background})`, height: `calc(100vh - 90px) ` }}>
             <div className="relative">
-                <div className="circle-bg dark absolute"></div>
                 <h1 className="font-poppins font-bold leading-[60.5px] text-[55px] text-[#1D2130] max-w-[600px] mb-2 dark:text-white ">
                     <span className="font-normal">{hey}</span>
                     {title}
