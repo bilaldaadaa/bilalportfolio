@@ -30,7 +30,7 @@ const root = createBrowserRouter([{
 
 
 createRoot(document.getElementById('root')).render(
-  <StrictMode >
+  <StrictMode>
 
     <RouterProvider router={root} />
 
