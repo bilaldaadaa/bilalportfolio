@@ -9,7 +9,7 @@ import Flora from './Page/Flora.jsx'
 import MainPage from './Page/MainPage.jsx'
 
 const root = createBrowserRouter([{
-  path: '/',
+  path: '/bilalportfolio',
   element: <Root />,
   children: [{
     path: '',
