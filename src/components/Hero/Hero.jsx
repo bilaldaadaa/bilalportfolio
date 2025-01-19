@@ -1,17 +1,17 @@
 import { LuCircleDotDashed } from "react-icons/lu";
 import "./Hero.css"
 import { saveAs } from "file-saver";
-import cv from "../../assets/files/Bilal_Daadaa.pdf"
+
 
 const Hero = ({ hey, title, description, btn, background, myimg, Squares, }) => {
     const Download = () => {
-        saveAs(cv, "Bilal_Daadaa.pdf")
+        saveAs("/public/assets/files/Bilal_Daadaa.pdf", "cv.pdf")
     };
 
 
     return (
 
-        <div id="home" className="px-7 flex justify-center items-center bg-contain bg-center bg-no-repeat border-b-2 border-[#1D2130] border-dashed mt-[112px] dark:border-white flex-wrap xl:justify-between  lg:px-[70px] " style={{ backgroundImage: `url(${background})`, height: `calc(100vh - 90px) ` }}>
+        <div id="home" className=" relative px-7 flex justify-center items-center bg-contain bg-center bg-no-repeat border-b-2 border-[#1D2130] border-dashed mt-[112px] dark:border-white flex-wrap xl:justify-between  lg:px-[70px] " style={{ backgroundImage: `url(${background})`, height: `calc(100vh - 90px) ` }}>
             <div className="relative">
                 <div className="circle "></div>
                 <h1 className="font-poppins font-bold leading-[60.5px] text-[55px] text-[#1D2130] max-w-[600px] mb-2 dark:text-white ">
@@ -23,7 +23,7 @@ const Hero = ({ hey, title, description, btn, background, myimg, Squares, }) => 
                 </p>
                 <div className="btn">
                     <button onClick={Download} className="w-[155px] h-[50px]  bg-[#FFFFFF99] font-poppins font-semibold text-base text-[#1D2130] dark:bg-[#0C96E299] ">
-                        <a>{btn}</a>
+                        {btn}
                     </button>
                 </div>
             </div>
@@ -32,7 +32,7 @@ const Hero = ({ hey, title, description, btn, background, myimg, Squares, }) => 
                 <div className="circle w-[413.26px] h-[413.26px] rounded-full bg-[#DFE1FA] flex align-middle justify-center z-[0] relative"></div>
                 <img src={myimg} alt="" className=" absolute top-[-40px]" />
             </div>
-            <span className=" absolute left-[50%] bottom-[-30px] -translate-x-1/2  "><LuCircleDotDashed className=" dark:bg-white dark:text-white dark:rounded-full" /></span>
+            <span className=" absolute left-[50%] bottom-[-10px] -translate-x-1/2  "><LuCircleDotDashed className=" dark:bg-white dark:text-white dark:rounded-full" /></span>
         </div>
     )
 }
