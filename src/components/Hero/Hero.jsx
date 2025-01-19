@@ -1,11 +1,11 @@
 import { LuCircleDotDashed } from "react-icons/lu";
 import "./Hero.css"
-
+import { saveAs } from "file-saver";
+import cv from "../../assets/files/Bilal_Daadaa.pdf"
 
 const Hero = ({ hey, title, description, btn, background, myimg, Squares, }) => {
     const Download = () => {
-        const cvUrl = '/public/assets/files/Bilal_Daadaa.pdf';
-        window.location.href = cvUrl;
+        saveAs(cv, "Bilal_Daadaa.pdf")
     };
 
 
