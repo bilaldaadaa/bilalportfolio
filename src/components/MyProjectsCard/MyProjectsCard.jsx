@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom"
+import arrowInsideCircle from "../../assets/img/arrow_inside_circle.svg"
 
 
 const MyProjectsCard = ({ projectImg, projectname, projectdescription, to, demoProject }) => {
@@ -10,7 +11,7 @@ const MyProjectsCard = ({ projectImg, projectname, projectdescription, to, demoP
                     <h4 className="font-poppins font-semibold text-[22px] leading-[33px] text-[#1D2130] mb-[11px] dark:text-white">{projectname}</h4>
                     <p className="font-poppins text-[#1D2130] font-normal text-base dark:text-white">{projectdescription}</p>
                 </div>
-                <Link to={to}><img src="./public/assets/img/arrow_inside_circle.svg" alt="" className="cursor-pointer" /></Link>
+                <Link to={to}><img src={arrowInsideCircle} alt="" className="cursor-pointer" /></Link>
             </div>
         </div>
     )
