@@ -3,7 +3,10 @@ import "./Hero.css"
 
 
 const Hero = ({ hey, title, description, btn, background, myimg, Squares, }) => {
-
+    const Download = () => {
+        const cvUrl = '/public/assets/files/Bilal_Daadaa.pdf';
+        window.open(cvUrl, '_blank');
+    };
 
 
     return (
@@ -19,8 +22,8 @@ const Hero = ({ hey, title, description, btn, background, myimg, Squares, }) => 
                     {description}
                 </p>
                 <div className="btn">
-                    <button className="w-[155px] h-[50px]  bg-[#FFFFFF99] font-poppins font-semibold text-base text-[#1D2130] dark:bg-[#0C96E299] ">
-                        <a href="/public/assets/files/Bilal_Daadaa.pdf" download="cv.pdf">{btn}</a>
+                    <button onClick={Download} className="w-[155px] h-[50px]  bg-[#FFFFFF99] font-poppins font-semibold text-base text-[#1D2130] dark:bg-[#0C96E299] ">
+                        <a>{btn}</a>
                     </button>
                 </div>
             </div>
