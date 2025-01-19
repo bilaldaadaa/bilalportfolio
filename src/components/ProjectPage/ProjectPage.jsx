@@ -27,7 +27,7 @@ const ProjectPage = ({ img, projectName, githubImg, date, proectDescription, lan
             <div className="px-7 relative flex justify-between items-center flex-wrap lg:px-[70px] border-b-2 border-dashed border-[#1D2130] dark:border-white py-[70px] gap-7">
                 <div className="h-full max-w-[610px]  relative" onMouseEnter={() => setHovered(true)} onMouseLeave={() => setHovered(false)} >
                     {hovered && <div className=" absolute bg-[#00000080] w-full h-full flex justify-center items-center gap-5">
-                        <a href={to}><img src='./public/assets/img/arrow_inside_circle_white.svg' alt="" className="cursor-pointer file:text-white " /></a>
+                        <a href={to}><img src='/public/assets/img/arrow_inside_circle_white.svg' alt="" className="cursor-pointer file:text-white " /></a>
                         <MdOutlineZoomOutMap className="text-white w-9 h-9 cursor-pointer" onClick={toggleZoom} />
                     </div>}
                     <img src={img} alt="" className=" max-w-full rounded-lg" />
