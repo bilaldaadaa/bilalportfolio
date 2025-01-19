@@ -11,6 +11,7 @@ import { MdOutlineEmail } from "react-icons/md"
 import { CiLocationOn } from "react-icons/ci"
 import ButtonGoToTop from "../components/ButtonGoToTop/ButtonGoToTop"
 import { useEffect, useState } from "react"
+import man from "../assets/img/man.png"
 
 
 
@@ -53,7 +54,7 @@ const MainPage = () => {
                 btn="Download Cv"
                 background="/public/assets/img/Lines.svg"
                 Squares="/public/assets/img/squers.png"
-                myimg="/public/assets/img/man.png"
+                myimg={man}
             />
             <AboutMe
 
