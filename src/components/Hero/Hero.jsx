@@ -5,7 +5,7 @@ import "./Hero.css"
 const Hero = ({ hey, title, description, btn, background, myimg, Squares, }) => {
     const Download = () => {
         const cvUrl = '/public/assets/files/Bilal_Daadaa.pdf';
-        window.open(cvUrl, '_blank');
+        window.location.href = cvUrl;
     };
 
 
