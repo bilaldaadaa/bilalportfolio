@@ -1020,16 +1020,28 @@ video {
   width: ;
 }
 
+.w-\[8\%\] {
+  width: 8%;
+}
+
+.w-\[85\] {
+  width: 85;
+}
+
 .w-\[85\%\] {
   width: 85%;
 }
 
-.w-\[90\%\] {
-  width: 90%;
-}
-
 .w-\[95\%\] {
   width: 95%;
+}
+
+.w-\[90\] {
+  width: 90;
+}
+
+.w-\[90\%\] {
+  width: 90%;
 }
 
 .min-w-full {
@@ -1331,6 +1343,10 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
+}
+
+.bg-\[\] {
+  background-color: ;
 }
 
 .bg-opacity-80 {
@@ -1676,6 +1692,31 @@ video {
 .dark\:bg-white:is(.dark *) {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
+}
+
+.dark\:bg-\[\]:is(.dark *) {
+  background-color: ;
+}
+
+.dark\:bg-\[\#\!\]:is(.dark *) {
+  background-color: #!;
+}
+
+.dark\:bg-\[\#1\]:is(.dark *) {
+  background-color: #1;
+}
+
+.dark\:bg-\[\#1D\]:is(.dark *) {
+  background-color: #1D;
+}
+
+.dark\:bg-\[\#1D292\]:is(.dark *) {
+  background-color: #1D292;
+}
+
+.dark\:bg-\[\#1D2939\]:is(.dark *) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(29 41 57 / var(--tw-bg-opacity, 1));
 }
 
 .dark\:text-white:is(.dark *) {
