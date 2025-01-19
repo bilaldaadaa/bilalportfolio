@@ -26,10 +26,10 @@ const AboutMe = ({ circles, logos, title, description, skils }) => {
                                             <h5 className="mb-[14px] text-[#1D2130] font-semibold text-2xl font-poppins dark:text-white">{skil.name}</h5>
                                             <p className="max-w-[500px] h-3 bg-[#EDECEC] rounded-full ">
                                                 <span className={`w-[${skil.width}]  h-3 bg-[#0C96E2] block rounded-full relative `}>
-                                                    <img src="/public/assets/img/AboutCircle.svg" alt="" className=" absolute top-[-10px] right-[-10px] cursor-pointer " />
+                                                    <img src="./public/assets/img/AboutCircle.svg" alt="" className=" absolute top-[-10px] right-[-10px] cursor-pointer " />
                                                     <span className="  absolute right-[-6px] top-[-40px] w-8 h-5 bg-[#0C96E2] flex items-center justify-center rounded-[4px] font-inter text-white font-normal text-[10px] leading-3">
                                                         {skil.width}
-                                                        <img src="/public/assets/img/tringle.svg" alt="" className="w-[12px] h-[12px] absolute bottom-[-10px] -z-10" />
+                                                        <img src="./public/assets/img/tringle.svg" alt="" className="w-[12px] h-[12px] absolute bottom-[-10px] -z-10" />
                                                     </span>
                                                 </span>
                                             </p>
